@@ -11,8 +11,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
-    - name: cmake
-      run: cmake -S . -B ./build/
+    - name: make
+      run: make -S . -B ./build/
     - name: make
       run: cd build && make
     - name: test
